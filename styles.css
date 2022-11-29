@@ -1,0 +1,260 @@
+/* START OF RESET STYLES */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET STYLES */
+
+/* ----------------- MY CODE ----------------- */
+
+/* ALL */
+
+* {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+}
+
+header, footer {
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 0px;
+    line-height: 1.5;
+}
+
+body {
+    display: block;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    background-image: url(chevron.png);
+}
+
+h1 {
+    text-align: center;
+    padding: 32px 0px;
+    font-size: 76px;
+    letter-spacing: 3pt;
+    font-weight: 700;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #3D405B;
+    background-color: #F2CC8F;
+    text-shadow: 2px 2px 5px #E07A5F;
+}
+
+h1 > a {
+    text-decoration: none;
+}
+
+h1 > a:visited {
+    color: #3D405B;;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 22px 0px;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: rgba(242, 204, 143, 0.5);
+    margin-bottom: 48px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+nav li {
+    display: inline;
+    padding: 8px 48px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3D405B;
+}
+
+nav a:hover {
+    color: #E07A5F;
+    font-weight: 700;
+}
+
+nav a:active {
+    color: #EEEEEE;
+}
+
+h2, h3, p {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+}
+
+
+/* INDEX */
+
+main {
+    padding: 52px 92px 76px 92px;
+    display: block;
+    background-color: rgba(129, 178, 154, 0.3);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+h2.home-h2 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.25;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding: 145px 0px 16px 0px;
+    margin: 0 auto;
+    color: #3D405B;
+    text-shadow: 2px 2px 5px #F2CC8F;
+}
+
+h3.home-h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 80px 0px 36px 0px;
+    color: #3D405B;
+}
+
+p.home-p {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    color: #3D405B;
+    padding-bottom: 36px;
+}
+
+.images {
+    width: 1280px;
+    height: auto;
+    padding-top: 92px;
+}
+
+#grid-container {
+    display: grid;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: rgba(242, 204, 143, 0.3);
+}
+
+#header {
+    float: right;
+    width: 45%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid;
+
+}
+
+#menu {
+    font-size: 20px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: #81B29A;
+}
+
+#menu:hover {
+    color: #E07A5F;
+}
+
+/* CONTACT */
+
+
+form {
+    display: inline-block;
+	width: 50%;
+    text-align: left;
+	margin: 0 auto;
+    padding-left: 64px;
+}
+
+label, input[type=text], input[type=tel], input[type=email], select, textarea {
+    width: 100%;
+}
+
+#contact-h2 {
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 36px 0px 24px 0px;
+}
+
+#contact-p {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+#grid-container-contact {
+    display: grid;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#main-contact {
+    margin: 0 auto;
+}
+
+#stairs {
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+#section {
+    display: block;
+    width: 1280px;
+}
+
+.form-p {
+    padding: 8px 0px;
+}
