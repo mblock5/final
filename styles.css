@@ -62,30 +62,34 @@ header, footer {
     margin: 0 auto;
 }
 
+
 footer {
     text-align: center;
-    padding: 32px 0px;
+    padding: 36px 0px;
     line-height: 1.5;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #CACAAA;
+    border-top: 2px solid #CACAAA;
 }
 
 body {
     display: block;
     width: 1280px;
     margin: 0 auto;
-    background-color: #EEEEEE;
     background-image: url(chevron.png);
 }
 
 h1 {
     text-align: center;
-    padding: 32px 0px;
+    padding: 48px 0px;
     font-size: 76px;
     letter-spacing: 3pt;
-    font-weight: 700;
+    font-weight: 800;
+    font-style: italic;
     font-family: 'Work Sans', Helvetica, sans-serif;
-    color: #3D405B;
-    background-color: #F2CC8F;
-    text-shadow: 2px 2px 5px #E07A5F;
+    color: #EEEEEE;
+    background-color: #7F636E;
+    text-shadow: 0px 0px 6px #3D405B;
 }
 
 h1 > a {
@@ -93,37 +97,42 @@ h1 > a {
 }
 
 h1 > a:visited {
-    color: #3D405B;;
+    color: #EEEEEE;
 }
 
 nav {
     display: block;
     text-align: center;
-    padding: 22px 0px;
+    padding: 28px 0px;
     font-family: 'Work Sans', Helvetica, sans-serif;
     font-weight: 500;
-    background-color: rgba(242, 204, 143, 0.5);
-    margin-bottom: 48px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    font-size: 14px;
+    background-color: #5c454e;
 }
 
 nav li {
     display: inline;
-    padding: 8px 48px;
 }
 
 nav a {
+    display: inline;
     text-decoration: none;
-    color: #3D405B;
+    color: #CACAAA;
+    font-weight: 700;
+    background-color: #7F636E;
+    padding: 12px 16px;
+    margin: 0px 32px;
+    border-radius: 10px;
+    border: 1px solid #cacaaa4c;
 }
 
 nav a:hover {
-    color: #E07A5F;
-    font-weight: 700;
+    background-color: #CACAAA;
+    color: #EEEEEE;
 }
 
 nav a:active {
+    background-color: #3D405B;
     color: #EEEEEE;
 }
 
@@ -134,12 +143,11 @@ h2, h3, p {
 
 /* INDEX */
 
+
 main {
     padding: 52px 92px 76px 92px;
     display: block;
-    background-color: rgba(129, 178, 154, 0.3);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    background-image: linear-gradient(rgb(129, 178, 154, 0.3), rgb(127, 99, 110, 0.15)); 
 }
 
 
@@ -150,32 +158,31 @@ h2.home-h2 {
     display: inline-block;
     width: 50%;
     text-align: center;
-    padding: 145px 0px 16px 0px;
+    padding: 86px 0px 16px 0px;
     margin: 0 auto;
     color: #3D405B;
-    text-shadow: 2px 2px 5px #F2CC8F;
+    text-shadow: 2px 2px 5px #55868C;
 }
 
 h3.home-h3 {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
     text-align: center;
-    padding: 80px 0px 36px 0px;
+    padding-bottom: 36px;
     color: #3D405B;
 }
 
 p.home-p {
+    font-size: 18px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     color: #3D405B;
-    padding-bottom: 36px;
 }
 
 .images {
     width: 1280px;
     height: auto;
-    padding-top: 92px;
 }
 
 #grid-container {
@@ -187,25 +194,62 @@ p.home-p {
 
 #header {
     float: right;
-    width: 45%;
+    width: 40%;
     height: auto;
     border-radius: 4px;
-    border: 1px solid;
+    border: 1.5px solid rgba(129, 178, 154, 0.6);
 
 }
 
 #menu {
+    text-decoration: none;
     font-size: 20px;
+    font-weight: 500;
     display: inline-block;
-    width: 50%;
+    width: 20%;
     text-align: center;
-    margin: 0 auto;
-    color: #81B29A;
+    margin-left: 150px;
+    color: #3D405B;
+    background-color: #CACAAA;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #EEEEEE;
 }
 
 #menu:hover {
-    color: #E07A5F;
+    color: #EEEEEE;
+    background-color: #7F636E;
 }
+
+#menu:active {
+    background-color: #3D405B;
+    color: #EEEEEE;
+}
+
+#cater {
+    padding: 64px 0px;
+    background-image: linear-gradient(rgba(127, 99, 110, 0.15), rgba(127, 99, 110, 0.4));
+}
+
+#local {
+    padding-bottom: 128px;
+    background-image: linear-gradient(rgba(127, 99, 110, 0.8), rgba(127, 99, 110, 0));
+}
+
+#local-h3 {
+    padding-top: 32px;
+}
+
+#chef {
+    padding-bottom: 124px;
+    background-image: linear-gradient(rgba(127, 99, 110, 0.8), rgba(127, 99, 110, 0));
+}
+
+#chef-h3 {
+    padding-top: 32px;
+}
+
+
 
 /* CONTACT */
 
