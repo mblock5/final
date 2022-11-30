@@ -19,39 +19,36 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
-				<li><a href="#">OUR MENU</a></li>
-				<li><a href="#">ORDER NOW</a></li>
+				<li><a href="menu.html">OUR MENU</a></li>
+				<li><a href="order.html">ORDER NOW</a></li>
 				<li><a href="contact.html">CONTACT US</a></li>
 			</ul>
 		</nav>
         <div id="grid-container-contact">
-            <main>
+            <main class="contact-main">
                 <h2 id="contact-h2">Contact Us</h2>
-                <p id="contact-p">Do you have any dietary concerns? Questions about an upcoming event? Drop us a line, and we'll get back to you soon!</p>
-            </main>
-            <section id="section">
-                <h3>Fill out the form below:</h3>
+                <p id="contact-p">Do you have any dietary concerns? Questions about an upcoming event?<br> Drop us a line, and we'll get back to you soon!</p>
                 <img src="contact-page/contact-img-optional3.jpg" alt="outdoor stairs with trees and bushes" id="stairs">
-                <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+            </main>
+            <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
 
-                    <p class="form-p">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" required>
-                    </p>
+                <p class="form-p">
+                    <label for="name">Full Name*</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
 
-                    <p class="form-p">   
-                        <label for="address">Address</label>
-                        <input type="text" name="address" id="address">
-                    </p>
+                <p class="form-p">   
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </p>
+                <p class="form-p">                            
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </p>
 
-                    <p class="form-p">    
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city">
-                    </p>
-
-                    <p class="form-p">    
-                        <label for="states">State</label>
-                        <select name="states" id="states">
+                <p class="form-p">    
+                    <label for="states">State</label>                        
+                    <select name="states" id="states">
                             <option value="Choose Your State">Choose Your State</option>
                             <option value="Alabama">Alabama</option>
                             <option value="Alaska">Alaska</option>
@@ -103,44 +100,43 @@
                             <option value="West Virginia">West Virginia</option>
                             <option value="Wisconsin">Wisconsin</option>
                             <option value="Wyoming">Wyoming</option>
-                        </select>
-                    </p>
+                    </select>
+                </p>
 
-                    <p class="form-p">    
-                        <label for="zip">Zip Code</label>
-                        <input type="text" name="zip" id="zip" maxlength="5">
-                    </p>
+                <p class="form-p">    
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip" maxlength="5">
+                </p>
 
-                    <p class="form-p">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" required>
-                    </p>
+                <p class="form-p">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </p>
 
-                    <p class="form-p"> 
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </p> 
+                <p class="form-p"> 
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required>
+                </p> 
 
-                    <fieldset>
-                        <legend>Preferred Method of Contact</legend>
+                <fieldset>
+                    <legend>Preferred Method of Contact</legend>
 
-                        <label for="phone_pref">Phone</label>
-                        <input type="radio" name="contact" value="Phone" id="phone_pref" checked>
+                    <label for="phone_pref">Phone</label>
+                    <input type="radio" name="contact" value="Phone" id="phone_pref" checked>
                                 
-                        <label for="email_pref">Email</label>
-                        <input type="radio" name="contact" value="Email" id="email_pref">	
-                    </fieldset>
+                    <label for="email_pref">Email</label>
+                    <input type="radio" name="contact" value="Email" id="email_pref">	
+                </fieldset>
 
-                    <p class="form-p">   
-                        <label for="comments">Comments</label><br>
-                        <textarea name="comments" id="comments" placeholder="Let us know your thoughts here!" rows="8" cols="20"></textarea>
-                    </p>
+                <p class="form-p">   
+                    <label for="comments">Comments</label><br>
+                    <textarea name="comments" id="comments" placeholder="Let us know your thoughts here!" rows="8" cols="20"></textarea>
+                </p>
 
-                    <p class="form-p">    
-                        <input type="submit" name="#" id="#">
-                    </p>
-                </form>
-            </section>
+                <p class="form-p">    
+                    <input type="submit" name="submit" id="submit">
+                </p>
+            </form>
         </div>
         <footer>
             Wok Asian Cuisine<br>
